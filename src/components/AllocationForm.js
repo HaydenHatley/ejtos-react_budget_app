@@ -16,6 +16,8 @@ const AllocationForm = (props) => {
                 return;
             }
 
+            
+
         const expense = {
             name: name,
             cost: parseInt(cost),
@@ -58,8 +60,12 @@ const AllocationForm = (props) => {
                         <option defaultValue value="Add" name="Add">Add</option>
                 <option value="Reduce" name="Reduce">Reduce</option>
                   </select>
-
-                    <input
+                  
+                  <div style={{ marginRight: '-1.5rem', marginLeft: '2rem'}}>
+                    <span>£</span>
+                    </div>
+                    
+                    <input 
                         required='required'
                         type='number'
                         id='cost'
